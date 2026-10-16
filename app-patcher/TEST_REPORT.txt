@@ -1,0 +1,26 @@
+Pruefbericht Y2 IRfix 1.0.0 vom 15.10.2026
+
+BESTANDEN
+- Die echte Zoid patches.json aendert genau zwei hinzugefuegte Zeilen:
+  die Modulliste von Y21B7W10034CCPD und die zusaetzliche About-Kennung.
+- Alle anderen Patchdateien, Modelle, Hunkpositionen und Zeilenzahlen bleiben gleich.
+- Quelltext mit einfachen/doppelten Anfuehrungszeichen wird verarbeitet.
+- Wiederholtes Ausfuehren fuehrt nicht zu weiteren Aenderungen.
+- Unbekannte Modullisten, doppelte/fehlende Eintraege und unpassende
+  App-Versionen werden abgelehnt.
+- Dry Run veraendert nichts; vorhandener Cache und patches.json werden
+  gemeinsam korrigiert. Sicherungen stimmen byteweise mit Originalen ueberein.
+- Ein vorhandener Signierschluessel bleibt im Integrationstest unveraendert.
+- Replay des hochgeladenen Messdatensatzes nach Entfernung des IR-Blocks:
+  PAR = 1.6122 W/m2; Gesamt-PPFD = 7.3235 umol/(m2*s).
+- Python spectral_metrics.py mit denselben 661 Spektralwerten nachgerechnet:
+  Lux 416.12386438; PAR Energie 1.60859649966 W/m2;
+  PPFD 7.315195574668 umol/(m2*s); CRI Ra 98.21798812.
+
+NICHT GEPRUEFT
+- Ein vollstaendiger APK-Build mit der konkret verwendeten APK 1.6.4.
+- Android-Installation, USB-Messung und CSV/PDF-Export am realen Redmi/Y2.
+- Neue Berechnungen von EML, melanopischer EDI, YPFD oder Risikogruppen.
+
+Die Tests sichern die gezielte Quelltextaenderung und die plausible
+Parameterzuordnung. Sie ersetzen keine Abnahme am realen Geraet.
