@@ -2,3 +2,18 @@
 /app-patcher/flameeye.apk
 /app-patcher/node_modules
 /interface/__pycache__
+# Python: lokale Umgebung und Cache
+.venv/
+__pycache__/
+*.py[cod]
+
+# Automatisch erzeugte PC-Messungen
+/interface/Messungen/
+
+# Android: lokale Abhängigkeiten und Builddateien
+/app-patcher/node_modules/
+/app-patcher/data/
+/app-patcher/y2-irfix-backup-*/
+*.apk
+*.jks
+*.keystore
