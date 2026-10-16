@@ -17,10 +17,26 @@ BESTANDEN
   Lux 416.12386438; PAR Energie 1.60859649966 W/m2;
   PPFD 7.315195574668 umol/(m2*s); CRI Ra 98.21798812.
 
-NICHT GEPRUEFT
-- Ein vollstaendiger APK-Build mit der konkret verwendeten APK 1.6.4.
-- Android-Installation, USB-Messung und CSV/PDF-Export am realen Redmi/Y2.
-- Neue Berechnungen von EML, melanopischer EDI, YPFD oder Risikogruppen.
+EINORDNUNG DES URSPRUENGLICHEN TESTLAUFS
+- Im automatisierten Test wurde kein vollstaendiger APK-Build und kein
+  physisches Android-Geraet ausgefuehrt. Der folgende Praxisergaenzungsteil
+  dokumentiert die spaeter vom Anwender bestaetigte Anwendung.
+- Neue Berechnungen von EML, melanopischer EDI, YPFD oder Risikogruppen
+  sind weiterhin nicht validiert.
 
 Die Tests sichern die gezielte Quelltextaenderung und die plausible
 Parameterzuordnung. Sie ersetzen keine Abnahme am realen Geraet.
+
+
+PRAXISERGAENZUNG, dokumentiert am 16.10.2026
+- Der Anwender bestaetigte am 15.10.2026 erfolgreichen APK-Bau, Update und
+  USB-Messung mit Redmi Note 13 Pro, Android 16.
+- Der bereitgestellte Export "Weisse LED.xlsx", Messung 15.10.2026
+  21:55:31, 1043,2 ms, enthaelt 661 Spektralwerte von 340 bis 1000 nm.
+- PAR: App 0,2928 W/m2; Nachrechnung 0,2925828502 W/m2 (+0,074 %).
+- PPFD: App 1,4290; Nachrechnung 1,4297478717 umol/(m2*s) (-0,052 %).
+- Lux: App 101; Nachrechnung 100,99843 lx.
+- Dies prueft die Rechenkonsistenz, nicht die absolute Kalibration.
+- Die melanopische Abweichung bleibt: App 7,78 gegenueber 38,90403 lx
+  nach der dokumentierten CIE-S-026-Referenzrechnung.
+- Andere Modelle und weitere App-Kennzahlen werden damit nicht validiert.

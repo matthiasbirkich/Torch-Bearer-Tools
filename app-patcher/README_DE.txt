@@ -2,8 +2,9 @@ Torch Bearer Y2 Android Korrektur 1.0.0
 ======================================
 Fuer Modell Y21B7W10034CCPD, Flameeye 1.6.4 mit Zoid Patch 0.4.
 Dies ist eine gezielte Korrektur des Patchers, keine fertig gebaute APK.
-Die konkret verwendete APK 1.6.4 wurde hier nicht bereitgestellt. Deshalb
-wurde das Paket nicht auf dem Redmi oder dem angeschlossenen Y2 getestet.
+Stand der Dokumentation: 16.10.2026. Der Anwender hat den erfolgreichen Bau,
+das Update und die USB-Messung am Redmi Note 13 Pro (Android 16) bestaetigt.
+Der LED-Export wurde anschliessend spektral nachgerechnet; siehe TEST_REPORT.txt.
 
 Installation unter Windows 11
 ----------------------------
@@ -58,8 +59,9 @@ Bereits gespeicherte CSV/PDF-Berichte werden nicht nachtraeglich berichtigt.
 
 Grenzen und weitere offene Punkte
 ---------------------------------
-Dies ist ein begruendeter und technisch gepruefter Kandidat fuer die
-Feldzuordnung; die Abnahme am realen Geraet steht aus.
+Die korrigierte Feldzuordnung wurde durch den bereitgestellten LED-Export
+nach dem vom Anwender bestaetigten Update geprueft. PAR und PPFD stimmen
+bei dieser Messung innerhalb von 0,1 % mit der spektralen Nachrechnung ueberein.
 Einzelne Farbband-Summen/Prozente koennen weiter wegen interner Bandgrenzen
 abweichen. Sie werden nicht mit einem pauschalen Faktor drei korrigiert.
 Dieses Paket implementiert KEINE neue McCree- oder CIE-Berechnung.
@@ -86,7 +88,7 @@ PowerShell im app-patcher-Ordner oeffnen:
 
 PC-Software
 -----------
-Die gepruefte main_export.py 1.2.1 mit spectral_metrics.py aus unserem
+Die gepruefte main_export.py 1.2.2 mit spectral_metrics.py aus unserem
 PC-Exportpaket dekodiert das Spektrum und berechnet Lux, PPFD, PAR und CRI
 selbst. Sie liest diese Werte NICHT aus den hier verschobenen App-Feldern.
 Sie hat daher diesen spezifischen Fehler nicht. Der Nachweis bezieht sich
@@ -96,5 +98,5 @@ Quellen und Lizenz
 ------------------
 Original: https://github.com/ZoidTechnology/Torch-Bearer-Tools
 Herstellerprotokolle: https://www.torchbearer.tech/support/developer.html
-Korrektur erstellt am 15.10.2026. Lizenz: GPL-3.0-or-later, siehe LICENSE.
+Korrektur erstellt am 15.10.2026. Lizenz: GPL-3.0-or-later, siehe ../license.md.
 Das Zusatzpaket stammt nicht vom Hersteller oder von ZoidTechnology.
