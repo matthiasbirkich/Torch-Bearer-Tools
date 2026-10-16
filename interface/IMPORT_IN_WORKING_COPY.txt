@@ -1,0 +1,7 @@
+Diese ZIP enthält den Ordner interface mit den zusammengehörigen PC-Dateien.
+Den Inhalt von interface in den vorhandenen interface-Ordner des Forks kopieren.
+Nicht einen zweiten interface-Ordner darin anlegen.
+Die vorhandene main.py und die Lizenzdatei des Forks behalten.
+Bei protocol.py darf die im Paket mitgelieferte passende Fassung verwendet werden.
+Keine .venv, __pycache__, Messungen, APKs oder Signaturschlüssel importieren.
+Die Haupt-README und die Android-Erweiterung ergänzen wir in den nächsten Schritten.
