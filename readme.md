@@ -113,6 +113,7 @@ Umrechnungsfaktor** auf die Messwerte angewendet.
 - Java 8 wie im ursprünglichen Projekt vorgesehen;
 - originale **Flameeye-APK 1.6.4** aus den
   [Herstellerdownloads](https://www.torchbearer.tech/support/download.html).
+bzw.https://web.archive.org/web/20250403122614id_/https://www.torchbearer.tech/api/support/download/latest/android
 
 1. Die originale APK als **flameeye.apk** in `app-patcher` ablegen.
 2. Bei der ersten Einrichtung ein Terminal in `app-patcher` öffnen und
