@@ -126,6 +126,7 @@ bzw.https://web.archive.org/web/20250403122614id_/https://www.torchbearer.tech/a
 Bei einem Update den bisherigen Signaturschlüssel beibehalten. Das Skript
 berücksichtigt sowohl `patches.json` als auch bereits zwischengespeicherte
 Patchdateien. Details und Sicherungsablauf:
+
 [Android-Anleitung](app-patcher/README_DE.txt).
 
 Die Verbindung zum Y2 erfolgt über USB mit geeignetem Host/OTG-Anschluss und
